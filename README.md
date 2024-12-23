@@ -33,6 +33,10 @@ documentation.
 
 ## Breaking Changes
 
+### CV22
+
+Custom Version of this action updated the runtime to Node 22
+
 ### V7
 
 Version 7 of this action updated the runtime to Node 20 - https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-javascript-actions
@@ -384,7 +388,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
+          node-version: '22.x'
       - run: npm ci
       # or one-off:
       - run: npm install execa
